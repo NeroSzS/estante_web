@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+:root {
+    --cor-primaria: #915F32;
+    --cor-secundaria: #CE9056;
+    --cor-tercearia: #E1E6EB;
+    --preto: black;
+    --branco: white;
+}
+
+header {
+    background-color: #915F32;
+}
+
+#logo-busca {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+}
+
+#form-busca {
+    display: flex;
+    align-items: center;
+}
+
+#logo {
+    font-family: "Special Elite", system-ui;
+    font-size: 4rem;
+    color: var(--preto);
+}
+
+#busca {
+    width: 250px;
+    height: 30px;
+    border: solid 2.6px var(--preto);
+    border-radius: 20px;
+    position: relative;
+}
+
+.icon-busca {
+    position:absolute;
+    z-index:1;
+    cursor: pointer;
+}
+
+.icon-mic {
+    position:absolute;
+    z-index:1;
+    cursor: pointer;
+}
+
+nav {
+    background-color: var(--cor-secundaria);
+    padding: .25rem;
+
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+}
+
+nav > a {
+    font-family: "Special Elite", system-ui;
+    font-size: 1.5rem;
+    color: var(--preto);
+    cursor: pointer;
+}
+
+main {
+    background-image: url(imgs/backgroud.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+footer {
+    background-color: var(--cor-primaria);
+    height: 50px;
+}
