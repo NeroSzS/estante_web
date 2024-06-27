@@ -4,30 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estante Web</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
     <header id="cabecalho">
         <div id="logo-busca">
             <h1 id="logo">Estante Web</h1>
             <form action="" id="form-busca">
-                <span class="material-symbols-outlined icon-busca">search</span>
+                <img src="/imgs/search_icon.svg" alt="" id="icon-busca">
                 <input type="search" name="busca" id="busca">
-                <span class="material-symbols-outlined icon-mic">mic</span>
+                <img src="/imgs/mic_icon.svg" alt="" id="icon-mic">
             </form>
         </div>
         <nav id="menu-nav">
-            <a href="">Início</a>
-            <a href="">Quem Somos</a>
-            <a href="">Contato</a>
-            <a href=""><span class="material-symbols-outlined">star</span>Favoritos</a>
-            <a href=""><span class="material-symbols-outlined">account_circle</span>Login</a>
+            <a href="index.html">Início</a>
+            <a href="views/quem_somos.html">Quem Somos</a>
+            <a href="views/contatos.html">Contato</a>
+            <a href="views/favoritos.html" class="alinhar"><img src="/imgs/star_icon.svg" alt="">Favoritos</a>
+            <a href="views/login.html">Login</a>
         </nav>
     </header>
 
     <main id="conteudo-principal"></main>
 
-    <footer id="rodape"></footer>
+    <footer id="rodape">
+        <div id="copy"><p>&copy; Estante Web</p></div>
+        <div><p>Todos os direitos reservados</p></div>
+        <div id="img-social">
+            <img src="/imgs/facebook_icon.svg" alt="" width="30px" height="30px">
+
+            <img src="/imgs/instagram_icon.svg" alt="" width="30px" height="30px">
+        </div>
+    </footer>
 </body>
 </html>

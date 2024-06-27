@@ -39,7 +39,7 @@ header {
 
 #logo {
     font-family: "Special Elite", system-ui;
-    font-size: 4rem;
+    font-size: 3.5rem;
     color: var(--preto);
 }
 
@@ -51,15 +51,11 @@ header {
     position: relative;
 }
 
-.icon-busca {
-    position:absolute;
-    z-index:1;
+#icon-busca {
     cursor: pointer;
 }
 
-.icon-mic {
-    position:absolute;
-    z-index:1;
+#icon-mic {
     cursor: pointer;
 }
 
@@ -81,15 +77,41 @@ nav > a {
     cursor: pointer;
 }
 
+
+.alinhar {
+    display: flex;
+    align-items: center;
+}
+
 main {
-    background-image: url(imgs/backgroud.png);
-    background-size: cover;
-    background-position: center;
+    background-image: url(/imgs/backgroud.png);
+    background-size: 100% 100%;
+    background-position: center center;
     background-repeat: no-repeat;
     flex-grow: 1;
 }
 
 footer {
     background-color: var(--cor-primaria);
+    font-family: "Special Elite", system-ui;
+    color: var(--cor-tercearia);
     padding: 1.5rem;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    text-align: center;
+    gap: 3rem;
+}
+
+#copy {
+    text-align: start;
+}
+
+#img-social {
+    text-align: end;
+}
+
+#img-social img {
+    margin: 0 0.5rem;
 }
