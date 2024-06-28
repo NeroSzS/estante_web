@@ -77,18 +77,27 @@ nav > a {
     cursor: pointer;
 }
 
+nav > a:hover {
+    background-color: var(--cor-primaria);
+    color: var(--cor-tercearia);
+}
 
 .alinhar {
     display: flex;
+    justify-content: center;
     align-items: center;
 }
 
 main {
+    flex-grow: 1;
+    background-color: var(--cor-tercearia);
+}
+
+#conteudo-principal {
     background-image: url(/imgs/backgroud.png);
     background-size: 100% 100%;
     background-position: center center;
     background-repeat: no-repeat;
-    flex-grow: 1;
 }
 
 footer {
