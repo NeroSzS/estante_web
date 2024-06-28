@@ -29,50 +29,59 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.5rem;
+    padding: 24px;
 }
 
 #form-busca {
     display: flex;
     align-items: center;
+    position: relative;
+    border: solid .1625rem var(--preto);
+    border-radius: 1.25rem;
 }
 
 #logo {
     font-family: "Special Elite", system-ui;
-    font-size: 3.5rem;
+    font-size: 56px;
     color: var(--preto);
 }
 
 #busca {
-    width: 250px;
-    height: 30px;
-    border: solid 2.6px var(--preto);
-    border-radius: 20px;
-    position: relative;
+    width: 18.75rem;
+    height: 2.5rem;
+    outline: 0;
+    border: none;
+    border-radius: 1.25rem;
+    background-color: transparent;
 }
 
 #icon-busca {
-    cursor: pointer;
+    left: 3.5%;
+    position: absolute;
+    z-index: 100;
 }
 
 #icon-mic {
+    right: 3.5%;
+    position: absolute;
+    z-index: 100;
     cursor: pointer;
 }
 
 nav {
     background-color: var(--cor-secundaria);
-    padding: .25rem;
+    padding: 4px;
 
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     align-items: center;
     text-align: center;
-    gap: 1rem;
+    gap: 16px;
 }
 
 nav > a {
     font-family: "Special Elite", system-ui;
-    font-size: 1.5rem;
+    font-size: 24px;
     color: var(--preto);
     cursor: pointer;
 }
@@ -104,13 +113,13 @@ footer {
     background-color: var(--cor-primaria);
     font-family: "Special Elite", system-ui;
     color: var(--cor-tercearia);
-    padding: 1.5rem;
+    padding: 24px;
 
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
     text-align: center;
-    gap: 3rem;
+    gap: 48px;
 }
 
 #copy {
@@ -122,5 +131,31 @@ footer {
 }
 
 #img-social img {
-    margin: 0 0.5rem;
+    margin: 0 8px;
+}
+
+
+#quem_somos {
+    font-family: "Special Elite", system-ui;
+    color: var(--cor-preto);
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+}
+
+#quem_somos > h1,p {
+    margin: 24px auto;
+}
+
+#quem_somos > h1 {
+    background-color: var(--cor-primaria);
+    width: 300px;
+    padding: 4.8px;
+    border-radius: 10PX;
+}
+
+#quem_somos > p {
+    padding: 0 80px;
+    font-size: 40px;
 }
