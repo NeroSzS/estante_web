@@ -66,6 +66,8 @@ header {
     position: absolute;
     z-index: 100;
     cursor: pointer;
+    background-color: transparent;
+    border: none;
 }
 
 nav {
@@ -135,6 +137,70 @@ footer {
 }
 
 
+/* Estilizando o Login */
+#conteudo-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#modal-login {
+    background-color: var(--cor-secundaria);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    color: var(--cor-preto);
+    height: 20rem;
+    width: 18rem;
+    margin: auto;
+    padding: 40px;
+    border-radius: 50px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+#modal-login > form {
+    margin-top: 20px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.input-login {
+    display: flex;
+    flex-direction: column;
+    width: 18.75rem;
+    padding: 10px;
+}
+
+.input-login > label {
+    text-align: start;
+}
+
+.input-login > input {
+    height: 30px;
+}
+
+#modal-login > form > button {
+    text-align: center;
+    height: 30px;
+    width: 9.375rem;
+
+    background-color: var(--cor-primaria);
+    color: var(--branco);
+    border: 2px solid black;
+}
+
+#modal-login > form > h2, p,a {
+    font-size: 1rem;
+    color: var(--cor-preto);
+}
+
+/* Estilização do Quem Somos */
 #quem_somos {
     font-family: "Special Elite", system-ui;
     color: var(--cor-preto);
