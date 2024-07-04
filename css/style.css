@@ -111,6 +111,12 @@ main {
     background-repeat: no-repeat;
 }
 
+#conteudo-perfil, #conteudo-categoria {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 footer {
     background-color: var(--cor-primaria);
     font-family: "Special Elite", system-ui;
@@ -144,7 +150,7 @@ footer {
     align-items: center;
 }
 
-#modal-login, #modal-cadastro, #modal-perfil {
+#modal-login, #modal-cadastro, #modal-perfil, #modal-categorias {
     background-color: var(--cor-secundaria);
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1rem;
@@ -194,7 +200,7 @@ footer {
     padding: 5px;
 }
 
-#modal-login > form > button, #modal-cadastro > form > button, #modal-perfil > form > button, #btn-perfil > button {
+#modal-login > form > button, #modal-cadastro > form > button, #modal-perfil > form > button, #btn-perfil > button, #add-categoria {
     text-align: center;
     height: 30px;
     width: 9.375rem;
@@ -234,12 +240,6 @@ footer {
 }
 
 /* Estilização do Perfil */
-#conteudo-perfil {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 #modal-perfil {
     border: 3px solid black;
     border-radius: 50px;
@@ -273,6 +273,25 @@ footer {
 
 #modal-perfil > form {
     text-align: center;
+}
+
+/* Estilização do Categorias */
+#modal-categorias {
+    padding: 0 10px;
+}
+
+#btn-categorias {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 50px;
+    padding: 5px 20px;
+
+    background-color: var(--cor-primaria);
+}
+
+#btn-categorias > button {
+    margin: 0;
 }
 
 /* Estilização do Quem Somos */
