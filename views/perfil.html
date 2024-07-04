@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estante Web</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header id="cabecalho">
+        <div id="logo-busca">
+            <h1 id="logo">Estante Web</h1>
+            <form action="" id="form-busca">
+                <img src="/imgs/search_icon.svg" alt="" id="icon-busca">
+                <input type="search" name="busca" id="busca">
+                <button id="icon-mic"><img src="/imgs/mic_icon.svg" alt="" ></button>
+            </form>
+        </div>
+        <nav id="menu-nav">
+            <a href="../index.html">Início</a>
+            <a href="quem_somos.html">Quem Somos</a>
+            <a href="contatos.html">Contato</a>
+            <a href="favoritos.html" class="alinhar"><img src="/imgs/star_icon.svg" alt="">Favoritos</a>
+            <a href="login.html">Login</a>
+        </nav>
+    </header>
+
+    <main id="conteudo-perfil">
+        <div id="edit-perfil">
+            <div id="modal-perfil">
+                <div id="perfil">
+                    <h1>MEU PERFIL</h1>
+                    <div class="foto"><img src="../imgs/perfil_icon.svg" alt=""></div>
+                    <div id="btn-perfil">
+                        <button><a href="#">Categorias</a></button>
+                        <button><a href="#">Livros</a></button>
+                    </div>
+                </div>
+                <form action="" method="get" id="form-perfil" enctype="multipart/form-data">
+                    <div class="input-perfil">
+                        <label for="img-perfil">Foto do Perfil:</label>
+                        <input type="file" name="img-perfil" id="img-perfil">
+                    </div>
+
+                    <div class="input-perfil">
+                        <label for="nome-perfil">Nome:</label>
+                        <input type="text" name="nome-perfil" id="nome-perfil"required>
+                    </div>
+
+                    <div class="input-perfil">
+                        <label for="email-perfil">E-mail:</label>
+                        <input type="email" name="email-perfil" id="email-perfil"required>
+                    </div>
+
+                    <div class="input-perfil">
+                        <label for="senha-perfil">Senha:</label>
+                        <input type="password" name="senha-perfil"id="senha-perfil" required>
+                    </div>
+                    <button type="submit">GRAVAR</button>
+                </form>
+        </div>
+    </main>
+
+    <footer id="rodape">
+        <div id="copy"><p>&copy; Estante Web</p></div>
+        <div><p>Todos os direitos reservados</p></div>
+        <div id="img-social">
+            <img src="/imgs/facebook_icon.svg" alt="" width="30px" height="30px">
+
+            <img src="/imgs/instagram_icon.svg" alt="" width="30px" height="30px">
+        </div>
+    </footer>
+</body>
+</html>

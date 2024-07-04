@@ -137,22 +137,22 @@ footer {
 }
 
 
-/* Estilizando o Login */
-#conteudo-login {
+/* Estilizando o Login & Cadastro */
+#conteudo-login, #conteudo-cadastro {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#modal-login {
+#modal-login, #modal-cadastro, #modal-perfil {
     background-color: var(--cor-secundaria);
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1rem;
     color: var(--cor-preto);
-    height: 20rem;
-    width: 18rem;
-    margin: auto;
-    padding: 40px;
+    height: 100%;
+    width: 100%;
+    padding: 30px;
+    border: 3px solid black;
     border-radius: 50px;
     
     display: flex;
@@ -161,8 +161,13 @@ footer {
     text-align: center;
 }
 
-#modal-login > form {
-    margin-top: 20px;
+#modal-cadastro {
+    height: 28rem;
+    width: 20rem;
+}
+
+#modal-login > form, #modal-cadastro > form {
+    margin-top: 15px;
     
     display: flex;
     flex-direction: column;
@@ -170,34 +175,104 @@ footer {
     text-align: center;
 }
 
-.input-login {
+.input-login, .input-cadastro, .input-perfil {
     display: flex;
     flex-direction: column;
     width: 18.75rem;
     padding: 10px;
 }
 
-.input-login > label {
+.input-login  > label, .input-cadastro  > label, .input-perfil  > label {
     text-align: start;
 }
 
-.input-login > input {
+.input-login > input, .input-cadastro > input, .input-perfil > input {
     height: 30px;
+    background-color: var(--cor-tercearia);
+    border: none;
+    border-radius: 10px;
+    padding: 5px;
 }
 
-#modal-login > form > button {
+#modal-login > form > button, #modal-cadastro > form > button, #modal-perfil > form > button, #btn-perfil > button {
     text-align: center;
     height: 30px;
     width: 9.375rem;
+    margin-bottom: 20px;
 
     background-color: var(--cor-primaria);
     color: var(--branco);
-    border: 2px solid black;
+    border: 3px solid black;
+    border-radius: 10px;
 }
 
-#modal-login > form > h2, p,a {
+#modal-login > form > h1, p, a, #modal-cadastro > form > h1, p, a, #modal-perfil > form > h1, p, a  {
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 1rem;
     color: var(--cor-preto);
+}
+
+#criar-conta {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#criar-conta > p {
+    margin: 0;
+    font-size: 1rem;
+    color: var(--cor-preto);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#modal-login > form > p, #modal-cadastro > form > p {
+    margin: 1px;
+}
+
+#termos-usos {
+    width: 20rem;
+    text-align: center;
+}
+
+/* Estilização do Perfil */
+#conteudo-perfil {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#modal-perfil {
+    border: 3px solid black;
+    border-radius: 50px;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+
+#perfil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.foto {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.foto > img {
+    height: 200px;
+    align-items: center;
+}
+
+#modal-perfil > form {
+    text-align: center;
 }
 
 /* Estilização do Quem Somos */
@@ -210,7 +285,7 @@ footer {
     flex-direction: column;
 }
 
-#quem_somos > h1,p {
+#quem_somos > h1, p {
     margin: 24px auto;
 }
 
