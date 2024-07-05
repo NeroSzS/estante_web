@@ -163,13 +163,24 @@ footer {
     
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     text-align: center;
+}
+
+#modal-login {
+    height: 25rem;
 }
 
 #modal-cadastro {
     height: 28rem;
-    width: 20rem;
+    width: 23rem;
+}
+
+#div-cadastro {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
 }
 
 #modal-login > form, #modal-cadastro > form {
@@ -204,12 +215,16 @@ footer {
     text-align: center;
     height: 30px;
     width: 9.375rem;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 
     background-color: var(--cor-primaria);
     color: var(--branco);
     border: 3px solid black;
     border-radius: 10px;
+}
+
+#modal-login > form > button {
+    margin-bottom: 25px;
 }
 
 #modal-login > form > h1, p, a, #modal-cadastro > form > h1, p, a, #modal-perfil > form > h1, p, a  {
@@ -277,7 +292,11 @@ footer {
 
 /* Estilização do Categorias */
 #modal-categorias {
-    padding: 0 10px;
+    height: 38rem;
+    width: 60rem;
+    padding: 0px;
+    justify-content: start;
+    border-radius: 40px;
 }
 
 #btn-categorias {
@@ -286,12 +305,50 @@ footer {
     align-items: center;
     border-radius: 50px;
     padding: 5px 20px;
-
+    height: 75px;
     background-color: var(--cor-primaria);
 }
 
 #btn-categorias > button {
     margin: 0;
+}
+
+#btn-categorias > button:hover {
+    background-color: var(--cor-secundaria);
+    height: 2.5rem;
+    width: 10rem;
+}
+
+#tabela-categorias {
+    margin: auto;
+    width: 80%;
+
+    overflow-y: scroll;
+}
+
+#tabela-categorias::-webkit-scrollbar {
+    display: none;
+}
+
+.linhas-categoria{
+    background-color: var(--cor-tercearia);
+    border: 3px solid black;
+    border-radius: 40px;
+
+    display: grid;
+    grid-template-columns: 4fr 2fr;
+    margin: 10px;
+}
+
+.linhas-categoria > p, a {
+    font-family: "Special Elite", system-ui;
+    color: var(--cor-preto);
+    font-size: 1.5rem;
+}
+
+.acoes-categoria {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }
 
 /* Estilização do Quem Somos */
