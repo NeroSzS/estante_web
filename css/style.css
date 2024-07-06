@@ -211,7 +211,7 @@ footer {
     padding: 5px;
 }
 
-#modal-login > form > button, #modal-cadastro > form > button, #modal-perfil > form > button, #btn-perfil > button, #add-categoria {
+#modal-login > form > button, #modal-cadastro > form > button, #modal-perfil > form > button, #btn-perfil > button, #add-categoria, #btn-add-categoria, #btn-edit-categoria {
     text-align: center;
     height: 30px;
     width: 9.375rem;
@@ -305,8 +305,11 @@ footer {
     align-items: center;
     border-radius: 50px;
     padding: 5px 20px;
+    margin: 0 auto;
+    width: 59rem;
     height: 75px;
     background-color: var(--cor-primaria);
+    font-family: "Special Elite", system-ui;
 }
 
 #btn-categorias > button {
@@ -322,6 +325,7 @@ footer {
 #tabela-categorias {
     margin: auto;
     width: 80%;
+    margin-top: 5px;
 
     overflow-y: scroll;
 }
@@ -335,20 +339,105 @@ footer {
     border: 3px solid black;
     border-radius: 40px;
 
-    display: grid;
-    grid-template-columns: 4fr 2fr;
+    display: flex;
+    align-items: center;
     margin: 10px;
+    padding: 0px 30px;
 }
 
-.linhas-categoria > p, a {
+.linhas-categoria p {
     font-family: "Special Elite", system-ui;
     color: var(--cor-preto);
     font-size: 1.5rem;
 }
 
 .acoes-categoria {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.acoes-categoria img, .btn-back img {
+    height: 30px;
+}
+
+.btn-edit {
+    display: flex;
+    align-items: center;
+}
+
+.btn-delet {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.btn-back {
+    height: 30px;
+    width: 7rem;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 50px;
+    background-color: var(--cor-secundaria);
+}
+
+#input-add {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    width: 60%;
+}
+
+#input-categorias, #input-edit-categorias {
+    height: 50px;
+    margin: auto;
+    background-color: var(--cor-tercearia);
+    border: 3px solid black;
+    border-radius: 40px;
+    padding: 5px;
+
+    font-family: "Special Elite", system-ui;
+    font-size: 2rem;
+    color: var(--cor-preto);
+    text-align: center;
+}
+
+#btn-add-categoria, #btn-edit-categoria {
+    height: 50px;
+    width: 20rem;
+    margin: auto;
+    padding: 0px;
+    border: none;
+    color: var(--cor-tercearia);
+}
+
+#btn-add-categoria > a, #btn-edit-categoria > a {
+    font-size: 2rem;
+}
+
+/* Estilizando o Contato */
+
+#contatos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+}
+
+.div-contato {
+    background-color: var(--cor-primaria);
+    border-radius: 50%;
+    height: 130px;
+    width: 130px;
+    padding: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon-contato > img {
+    height: 80px;
 }
 
 /* Estilização do Quem Somos */
