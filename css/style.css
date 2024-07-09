@@ -22,6 +22,7 @@ body {
 }
 
 header {
+    width: 100%;
     background-color: #915F32;
 }
 
@@ -100,6 +101,11 @@ nav > a:hover {
 }
 
 main {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
     flex-grow: 1;
     background-color: var(--cor-tercearia);
 }
@@ -121,7 +127,7 @@ footer {
     background-color: var(--cor-primaria);
     font-family: "Special Elite", system-ui;
     color: var(--cor-tercearia);
-    padding: 24px;
+    padding: 5px 20px;
 
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -416,13 +422,86 @@ footer {
     font-size: 2rem;
 }
 
+/* Estilizando o Favoritos */
+#main-favoritos {
+    justify-content: start;
+    align-items: flex-end
+}
+
+#container-favoritos {
+    display: grid;
+    width: 100%;
+    height: 42rem;
+    grid-template-columns: 4fr 8fr ;
+    gap: 20px;
+    padding-right: 20px;
+}
+
+
+#categorias-livros, #livros-favoritos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    background-color: var(--cor-secundaria);
+
+    width: 100;
+    height: 100%;
+    padding: 25px;
+    border-radius: 0px 50px 0px 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.livro-categoria {
+    background-color: var(--cor-tercearia);
+    font-size: 2rem;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.livro-categoria:hover {
+    background-color: var(--cor-primaria);
+}
+
+
+#livros-favoritos {
+    border-radius: 50px 50px 0px 0px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    overflow-y: scroll;
+}
+
+.livro-favorito {
+    height: 150px;
+    width: 120px;
+    font-size: .6rem;
+    text-align: center;
+}
+
+.livro-favorito > img {
+    height: 100%;
+    width: 100%;
+}
+
 /* Estilizando o Contato */
 
 #contatos {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: auto;
+    align-items: center;
+    gap: 30px;
+}
+
+.icon-contato {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    font-family: "Special Elite", system-ui;
+    font-size: 3rem;
 }
 
 .div-contato {
@@ -436,7 +515,8 @@ footer {
     justify-content: center;
     align-items: center;
 }
-.icon-contato > img {
+
+.icon-contato  img {
     height: 80px;
 }
 
