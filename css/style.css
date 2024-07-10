@@ -156,7 +156,7 @@ footer {
     align-items: center;
 }
 
-#modal-login, #modal-cadastro, #modal-perfil, #modal-categorias {
+#modal-login, #modal-cadastro, #modal-perfil, #modal-categorias, #modal-livros {
     background-color: var(--cor-secundaria);
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1rem;
@@ -217,7 +217,7 @@ footer {
     padding: 5px;
 }
 
-#modal-login > form > button, #modal-cadastro > form > button, #modal-perfil > form > button, #btn-perfil > button, #add-categoria, #btn-add-categoria, #btn-edit-categoria {
+#modal-login > form > button, #modal-cadastro > form > button, #modal-perfil > form > button, #btn-perfil > button, #add-categoria, #btn-add-categoria, #btn-edit-categoria, #add-livros {
     text-align: center;
     height: 30px;
     width: 9.375rem;
@@ -297,7 +297,7 @@ footer {
 }
 
 /* Estilização do Categorias */
-#modal-categorias {
+#modal-categorias, #modal-livros {
     height: 38rem;
     width: 60rem;
     padding: 0px;
@@ -305,7 +305,7 @@ footer {
     border-radius: 40px;
 }
 
-#btn-categorias {
+#btn-categorias,  #btn-livros {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -318,11 +318,14 @@ footer {
     font-family: "Special Elite", system-ui;
 }
 
-#btn-categorias > button {
+#btn-categorias > a, #btn-livros > a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 0;
 }
 
-#btn-categorias > button:hover {
+#btn-categorias > a:hover, #btn-livros > a:hover {
     background-color: var(--cor-secundaria);
     height: 2.5rem;
     width: 10rem;
@@ -336,7 +339,7 @@ footer {
     overflow-y: scroll;
 }
 
-#tabela-categorias::-webkit-scrollbar {
+#tabela-categorias::-webkit-scrollbar, #livros-favoritos::-webkit-scrollbar, #tabela-livros::-webkit-scrollbar {
     display: none;
 }
 
@@ -381,7 +384,6 @@ footer {
 .btn-back {
     height: 30px;
     width: 7rem;
-    margin-bottom: 10px;
     border: none;
     border-radius: 50px;
     background-color: var(--cor-secundaria);
@@ -445,7 +447,7 @@ footer {
     gap: 20px;
     background-color: var(--cor-secundaria);
 
-    width: 100;
+    width: 100%;
     height: 100%;
     padding: 25px;
     border-radius: 0px 50px 0px 0px;
@@ -472,16 +474,44 @@ footer {
     overflow-y: scroll;
 }
 
-.livro-favorito {
-    height: 150px;
+.livro-favorito, .livro {
+    height: 200px;
     width: 120px;
     font-size: .6rem;
+    display: flex;
+    flex-direction: column;
     text-align: center;
+    align-items: center;
+    gap: 10px;
+    position: relative;
 }
 
-.livro-favorito > img {
-    height: 100%;
+.livro-favorito > img, .livro > img {
+    height: 70%;
+    width: 80%;
+}
+
+.coracao-icon, .edit-livro-icon {
+    position: absolute;
+    width: 25px;
+    top: -1%;
+    left: 65%;
+}
+
+/* Estilizando os Livros */
+
+#tabela-livros {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
     width: 100%;
+    margin-top: 20px;
+    overflow-y: scroll;
+}
+
+.edit-livro-icon {
+    background-color: var(--cor-tercearia);
 }
 
 /* Estilizando o Contato */

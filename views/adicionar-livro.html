@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Editar Categorias</title>
+    <title>Adicionar Livros</title>
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
@@ -25,17 +25,31 @@
         </nav>
     </header>
 
-    <main id="conteudo-categoria">
-        <div id="modal-categorias">
-            <div id="btn-categorias">
-                <h1>Editar Categorias</h1>
-                <a class="btn-back" href="categorias.html"><img src="../imgs/back-icon.svg" alt=""></a>
+    <main id="conteudo-livros">
+        <div id="modal-livros">
+            <div id="btn-livros">
+                <h1>Adicionar Livros</h1>
+                <a class="btn-back" href="livros.html"><img src="../imgs/back-icon.svg" alt=""></a>
             </div>
 
-            <div id="input-add">
-                <input type="text" name="input-edit-categorias" id="input-edit-categorias">
-                <button id="btn-edit-categoria"><a href="">Editar</a></button>
-            </div>
+            <form action="">
+                <div id="input-add-livro">
+                    <input type="file" name="capa-livro" id="capa-livro">
+                    <input type="text" name="title-livro" id="title-livro">
+                    <input type="text" name="autor-livro" id="autor-livro">
+                    <select name="Categoria-livro" id="Categoria-livro">
+                        <option value="" disabled selected>Selecione as Categorias</option>
+                        <option value="acao">Ação</option>
+                        <option value="aventura">Aventura</option>
+                        <option value="infantil">Infantil</option>
+                        <option value="terror">Terror</option>
+                        <option value="romance">Romance</option>
+                    </select>
+                    <textarea name="sinopse-livro" id="sinopse-livro"></textarea>
+                </div>
+                <button type="submit">Salvar</button>
+                <button type="reset">Apagar</button>
+            </form>
         </div>
     </main>
 
