@@ -1,73 +1,108 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cadastro</title>
-    <link rel="stylesheet" href="/css/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
     <header id="cabecalho">
-        <div id="logo-busca">
-            <h1 id="logo">Estante Web</h1>
-            <form action="" id="form-busca">
-                <img src="../imgs/search_icon.svg" alt="" id="icon-busca">
-                <input type="search" name="busca" id="busca">
-                <img src="../imgs/mic_icon.svg" alt="" id="icon-mic">
-            </form>
-        </div>
-        <nav id="menu-nav">
-            <a href="../index.html">Início</a>
-            <a href="quem_somos.html">Quem Somos</a>
-            <a href="contatos.html">Contato</a>
-            <a href="favoritos.html" class="alinhar"><img src="/imgs/star_icon.svg" alt="">Favoritos</a>
-            <a href="login.html">Login</a>
-        </nav>
+      <div id="logo-busca">
+        <h1 id="logo">Estante Web</h1>
+        <form action="" id="form-busca">
+          <img src="../imgs/search_icon.svg" alt="" id="icon-busca" />
+          <input type="search" name="busca" id="busca" />
+          <img src="../imgs/mic_icon.svg" alt="" id="icon-mic" />
+        </form>
+      </div>
+      <nav id="menu-nav">
+        <a href="../index.html">Início</a>
+        <a href="quem_somos.html">Quem Somos</a>
+        <a href="contatos.html">Contato</a>
+        <a href="favoritos.html" class="alinhar"
+          ><img src="/imgs/star_icon.svg" alt="" />Favoritos</a
+        >
+        <a href="login.html">Login</a>
+      </nav>
     </header>
 
     <main id="conteudo-cadastro">
-        <div id="div-cadastro">
-            <div id="modal-cadastro">
-                <h1>Crie sua conta</h1>
-                <form action="" method="get" id="form-cadastro" enctype="multipart/form-data">
-                    <div class="input-cadastro">
-                        <label for="img-cadastro">Foto do Perfil:</label>
-                        <input type="file" name="img-cadastro" id="img-cadastro">
-                    </div>
-
-                    <div class="input-cadastro">
-                        <label for="nome-cadastro">Nome:</label>
-                        <input type="text" name="nome-cadastro" id="nome-cadastro"required>
-                    </div>
-
-                    <div class="input-cadastro">
-                        <label for="email-cadastro">E-mail:</label>
-                        <input type="email" name="email-cadastro" id="email-cadastro"required>
-                    </div>
-
-                    <div class="input-cadastro">
-                        <label for="senha-cadastro">Senha:</label>
-                        <input type="password" name="senha-cadastro"id="senha-cadastro" required>
-                    </div>
-                    <button type="submit">CRIAR CONTA</button>
-                    <p>Já é cadastrado?</p>
-                    <p><a href="login.html">Acesse sua conta</a></p>
-                </form>
+      <div id="div-cadastro">
+        <div id="modal-cadastro">
+          <h1>Crie sua conta</h1>
+          <form
+            action=""
+            method="get"
+            id="form-cadastro"
+            enctype="multipart/form-data"
+          >
+            <div class="input-cadastro">
+              <label for="img-cadastro">Foto do Perfil:</label>
+              <input type="file" name="img-cadastro" id="img-cadastro" />
             </div>
-            <div id="termos-usos">
-                <p>Ao seguir com o cadastro, concorde com os Termos de Uso e Politicas de Privacidade</p>
+
+            <div class="input-cadastro">
+              <label for="nome-cadastro">Nome:</label>
+              <input
+                type="text"
+                name="nome-cadastro"
+                id="nome-cadastro"
+                required
+              />
             </div>
+
+            <div class="input-cadastro">
+              <label for="email-cadastro">E-mail:</label>
+              <input
+                type="email"
+                name="email-cadastro"
+                id="email-cadastro"
+                required
+              />
+            </div>
+
+            <div class="input-cadastro">
+              <label for="senha-cadastro">Senha:</label>
+              <input
+                type="password"
+                name="senha-cadastro"
+                id="senha-cadastro"
+                required
+              />
+            </div>
+            <button type="submit">CRIAR CONTA</button>
+            <p>Já é cadastrado?</p>
+            <p><a href="login.html">Acesse sua conta</a></p>
+          </form>
         </div>
+        <div id="termos-usos">
+          <p>
+            Ao seguir com o cadastro, concorde com os Termos de Uso e Politicas
+            de Privacidade
+          </p>
+        </div>
+      </div>
     </main>
 
     <footer id="rodape">
-        <div id="copy"><p>&copy; Estante Web</p></div>
-        <div><p>Todos os direitos reservados</p></div>
-        <div id="img-social">
-            <img src="../imgs/facebook_icon.svg" alt="" width="30px" height="30px">
+      <div id="copy"><p>&copy; Estante Web</p></div>
+      <div><p>Todos os direitos reservados</p></div>
+      <div id="img-social">
+        <img
+          src="../imgs/facebook_icon.svg"
+          alt=""
+          width="30px"
+          height="30px"
+        />
 
-            <img src="../imgs/instagram_icon.svg" alt="" width="30px" height="30px">
-        </div>
+        <img
+          src="../imgs/instagram_icon.svg"
+          alt=""
+          width="30px"
+          height="30px"
+        />
+      </div>
     </footer>
-</body>
+  </body>
 </html>
