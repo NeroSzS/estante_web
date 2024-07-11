@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Editar Livros</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <header id="cabecalho">
+      <div id="logo-busca">
+        <h1 id="logo">Estante Web</h1>
+        <form action="" id="form-busca">
+          <img src="/imgs/search_icon.svg" alt="" id="icon-busca" />
+          <input type="search" name="busca" id="busca" />
+          <button id="icon-mic"><img src="/imgs/mic_icon.svg" alt="" /></button>
+        </form>
+      </div>
+      <nav id="menu-nav">
+        <a href="../index.html">Início</a>
+        <a href="quem_somos.html">Quem Somos</a>
+        <a href="contatos.html">Contato</a>
+        <a href="favoritos.html" class="alinhar"
+          ><img src="/imgs/star_icon.svg" alt="" />Favoritos</a
+        >
+        <a href="login.html">Login</a>
+      </nav>
+    </header>
+
+    <main id="conteudo-livros">
+      <div id="modal-livros">
+        <div id="btn-livros">
+          <h1>Editar Livros</h1>
+          <a class="btn-back" href="livros.html"
+            ><img src="../imgs/back-icon.svg" alt=""
+          /></a>
+        </div>
+
+        <form action="" id="form-editLivros">
+          <div id="input-edit-livro">
+            <label for="capa-livro" id="capaLivro">Adicione uma Capa</label>
+            <input type="file" name="edit-capa-livro" id="edit-capa-livro" />
+            <div id="descricoes-livros">
+              <input
+                type="text"
+                name="edit-title-livro"
+                id="edit-title-livro"
+                placeholder="Digite o Titulo"
+                class="input-descricaoLivro"
+              />
+              <input
+                type="text"
+                name="edit-autor-livro"
+                id="edit-autor-livro"
+                placeholder="Digite o Autor"
+                class="input-descricaoLivro"
+              />
+              <select
+                name="edit-categoria-livro"
+                id="edit-categoria-livro"
+                class="input-descricaoLivro"
+              >
+                <option value="" disabled selected>
+                  Selecione as Categorias
+                </option>
+                <option value="acao">Ação</option>
+                <option value="aventura">Aventura</option>
+                <option value="infantil">Infantil</option>
+                <option value="terror">Terror</option>
+                <option value="romance">Romance</option>
+              </select>
+            </div>
+            <textarea
+              name="edit-sinopse-livro"
+              id="edit-sinopse-livro"
+              placeholder="Digite a Sinopse"
+              class="input-descricaoLivro"
+            ></textarea>
+          </div>
+          <button type="submit">Salvar</button>
+          <button type="reset">Apagar</button>
+        </form>
+      </div>
+    </main>
+
+    <footer id="rodape">
+      <div id="copy"><p>&copy; Estante Web</p></div>
+      <div><p>Todos os direitos reservados</p></div>
+      <div id="img-social">
+        <img src="/imgs/facebook_icon.svg" alt="" width="30px" height="30px" />
+
+        <img src="/imgs/instagram_icon.svg" alt="" width="30px" height="30px" />
+      </div>
+    </footer>
+  </body>
+</html>

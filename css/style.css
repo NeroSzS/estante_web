@@ -1,577 +1,720 @@
-@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Special+Elite&display=swap");
 
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
 }
 
 :root {
-    --cor-primaria: #915F32;
-    --cor-secundaria: #CE9056;
-    --cor-tercearia: #E1E6EB;
-    --preto: black;
-    --branco: white;
+  --cor-primaria: #915f32;
+  --cor-secundaria: #ce9056;
+  --cor-tercearia: #e1e6eb;
+  --preto: black;
+  --branco: white;
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 header {
-    width: 100%;
-    background-color: #915F32;
+  width: 100%;
+  background-color: #915f32;
 }
 
 #logo-busca {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px;
 }
 
 #form-busca {
-    display: flex;
-    align-items: center;
-    position: relative;
-    border: solid .1625rem var(--preto);
-    border-radius: 1.25rem;
+  display: flex;
+  align-items: center;
+  position: relative;
+  border: solid 0.1625rem var(--preto);
+  border-radius: 1.25rem;
 }
 
 #logo {
-    font-family: "Special Elite", system-ui;
-    font-size: 56px;
-    color: var(--preto);
+  font-family: "Special Elite", system-ui;
+  font-size: 56px;
+  color: var(--preto);
 }
 
 #busca {
-    width: 18.75rem;
-    height: 2.5rem;
-    outline: 0;
-    border: none;
-    border-radius: 1.25rem;
-    background-color: transparent;
+  width: 18.75rem;
+  height: 2.5rem;
+  outline: 0;
+  border: none;
+  border-radius: 1.25rem;
+  background-color: transparent;
 }
 
 #icon-busca {
-    left: 3.5%;
-    position: absolute;
-    z-index: 100;
+  left: 3.5%;
+  position: absolute;
+  z-index: 100;
 }
 
 #icon-mic {
-    right: 3.5%;
-    position: absolute;
-    z-index: 100;
-    cursor: pointer;
-    background-color: transparent;
-    border: none;
+  right: 3.5%;
+  position: absolute;
+  z-index: 100;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
 }
 
 nav {
-    background-color: var(--cor-secundaria);
-    padding: 4px;
+  background-color: var(--cor-secundaria);
+  padding: 4px;
 
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    align-items: center;
-    text-align: center;
-    gap: 16px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  align-items: center;
+  text-align: center;
+  gap: 16px;
 }
 
 nav > a {
-    font-family: "Special Elite", system-ui;
-    font-size: 24px;
-    color: var(--preto);
-    cursor: pointer;
+  font-family: "Special Elite", system-ui;
+  font-size: 24px;
+  color: var(--preto);
+  cursor: pointer;
 }
 
 nav > a:hover {
-    background-color: var(--cor-primaria);
-    color: var(--cor-tercearia);
+  background-color: var(--cor-primaria);
+  color: var(--cor-tercearia);
 }
 
 .alinhar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 main {
-    display: flex;
-    height: 100%;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-    flex-grow: 1;
-    background-color: var(--cor-tercearia);
+  display: flex;
+  height: 100%;
+  width: 100%;
+  padding: 20px;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  background-color: var(--cor-tercearia);
 }
 
 #conteudo-principal {
-    background-image: url(/imgs/backgroud.png);
-    background-size: 100% 100%;
-    background-position: center center;
-    background-repeat: no-repeat;
+  background-image: url(/imgs/backgroud.png);
+  background-size: 100% 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 
-#conteudo-perfil, #conteudo-categoria {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+#conteudo-perfil,
+#conteudo-categoria {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 footer {
-    background-color: var(--cor-primaria);
-    font-family: "Special Elite", system-ui;
-    color: var(--cor-tercearia);
-    padding: 5px 20px;
+  background-color: var(--cor-primaria);
+  font-family: "Special Elite", system-ui;
+  color: var(--cor-tercearia);
+  padding: 5px 20px;
 
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    align-items: center;
-    text-align: center;
-    gap: 48px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  text-align: center;
+  gap: 48px;
 }
 
 #copy {
-    text-align: start;
+  text-align: start;
 }
 
 #img-social {
-    text-align: end;
+  text-align: end;
 }
 
 #img-social img {
-    margin: 0 8px;
+  margin: 0 8px;
 }
-
 
 /* Estilizando o Login & Cadastro */
-#conteudo-login, #conteudo-cadastro {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#conteudo-login,
+#conteudo-cadastro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-#modal-login, #modal-cadastro, #modal-perfil, #modal-categorias, #modal-livros {
-    background-color: var(--cor-secundaria);
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1rem;
-    color: var(--cor-preto);
-    height: 100%;
-    width: 100%;
-    padding: 30px;
-    border: 3px solid black;
-    border-radius: 50px;
-    
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    text-align: center;
+#modal-login,
+#modal-cadastro,
+#modal-perfil,
+#modal-categorias,
+#modal-livros {
+  background-color: var(--cor-secundaria);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  color: var(--cor-preto);
+  height: 100%;
+  width: 100%;
+  padding: 30px;
+  border: 3px solid black;
+  border-radius: 50px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
 }
 
 #modal-login {
-    height: 25rem;
+  height: 25rem;
 }
 
 #modal-cadastro {
-    height: 28rem;
-    width: 23rem;
+  height: 28rem;
+  width: 23rem;
 }
 
 #div-cadastro {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
 }
 
-#modal-login > form, #modal-cadastro > form {
-    margin-top: 15px;
-    
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+#modal-login > form,
+#modal-cadastro > form,
+#modal-categorias > form {
+  margin-top: 15px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
-.input-login, .input-cadastro, .input-perfil {
-    display: flex;
-    flex-direction: column;
-    width: 18.75rem;
-    padding: 10px;
+.input-login,
+.input-cadastro,
+.input-perfil {
+  display: flex;
+  flex-direction: column;
+  width: 18.75rem;
+  padding: 10px;
 }
 
-.input-login  > label, .input-cadastro  > label, .input-perfil  > label {
-    text-align: start;
+.input-login > label,
+.input-cadastro > label,
+.input-perfil > label {
+  text-align: start;
 }
 
-.input-login > input, .input-cadastro > input, .input-perfil > input {
-    height: 30px;
-    background-color: var(--cor-tercearia);
-    border: none;
-    border-radius: 10px;
-    padding: 5px;
+.input-login > input,
+.input-cadastro > input,
+.input-perfil > input {
+  height: 30px;
+  background-color: var(--cor-tercearia);
+  border: none;
+  border-radius: 10px;
+  padding: 5px;
 }
 
-#modal-login > form > button, #modal-cadastro > form > button, #modal-perfil > form > button, #btn-perfil > button, #add-categoria, #btn-add-categoria, #btn-edit-categoria, #add-livros {
-    text-align: center;
-    height: 30px;
-    width: 9.375rem;
-    margin-bottom: 10px;
+#modal-login > form > button,
+#modal-cadastro > form > button,
+#modal-perfil > form > button,
+#btn-perfil > button,
+#add-categoria,
+#btn-add-categoria,
+#btn-edit-categoria,
+#add-livros,
+#form-addLivros > button,
+#form-editLivros > button {
+  text-align: center;
+  height: 30px;
+  width: 9.375rem;
+  margin-bottom: 10px;
 
-    background-color: var(--cor-primaria);
-    color: var(--branco);
-    border: 3px solid black;
-    border-radius: 10px;
+  background-color: var(--cor-primaria);
+  color: var(--branco);
+  border: 3px solid black;
+  border-radius: 10px;
 }
 
 #modal-login > form > button {
-    margin-bottom: 25px;
+  margin-bottom: 25px;
 }
 
-#modal-login > form > h1, p, a, #modal-cadastro > form > h1, p, a, #modal-perfil > form > h1, p, a  {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1rem;
-    color: var(--cor-preto);
+#modal-login > form > h1,
+p,
+a,
+#modal-cadastro > form > h1,
+p,
+a,
+#modal-perfil > form > h1,
+p,
+a {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  color: var(--cor-preto);
 }
 
 #criar-conta {
-    margin-top: 20px;
-    text-align: center;
+  margin-top: 20px;
+  text-align: center;
 }
 
 #criar-conta > p {
-    margin: 0;
-    font-size: 1rem;
-    color: var(--cor-preto);
-    font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  font-size: 1rem;
+  color: var(--cor-preto);
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-#modal-login > form > p, #modal-cadastro > form > p {
-    margin: 1px;
+#modal-login > form > p,
+#modal-cadastro > form > p {
+  margin: 1px;
 }
 
 #termos-usos {
-    width: 20rem;
-    text-align: center;
+  width: 20rem;
+  text-align: center;
 }
 
 /* Estilização do Perfil */
 #modal-perfil {
-    border: 3px solid black;
-    border-radius: 50px;
+  border: 3px solid black;
+  border-radius: 50px;
 
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
 }
 
 #perfil {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
 }
 
 .foto {
-    height: 200px;
-    width: 200px;
-    border-radius: 50%;
-    background-color: black;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .foto > img {
-    height: 200px;
-    align-items: center;
+  height: 200px;
+  align-items: center;
 }
 
 #modal-perfil > form {
-    text-align: center;
+  text-align: center;
 }
 
 /* Estilização do Categorias */
-#modal-categorias, #modal-livros {
-    height: 38rem;
-    width: 60rem;
-    padding: 0px;
-    justify-content: start;
-    border-radius: 40px;
+#modal-categorias,
+#modal-livros {
+  height: 30rem;
+  max-width: 45rem;
+  padding: 0px;
+  justify-content: start;
+  border-radius: 40px;
 }
 
-#btn-categorias,  #btn-livros {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-radius: 50px;
-    padding: 5px 20px;
-    margin: 0 auto;
-    width: 59rem;
-    height: 75px;
-    background-color: var(--cor-primaria);
-    font-family: "Special Elite", system-ui;
+#btn-categorias,
+#btn-livros {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 50px;
+  padding: 5px 20px;
+  margin: 0 auto;
+  width: 100%;
+  height: 75px;
+  background-color: var(--cor-primaria);
+  font-family: "Special Elite", system-ui;
 }
 
-#btn-categorias > a, #btn-livros > a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
+#btn-categorias > a,
+#btn-livros > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
 }
 
-#btn-categorias > a:hover, #btn-livros > a:hover {
-    background-color: var(--cor-secundaria);
-    height: 2.5rem;
-    width: 10rem;
+#btn-categorias > a:hover,
+#btn-livros > a:hover {
+  background-color: var(--cor-secundaria);
+  height: 2.5rem;
 }
 
 #tabela-categorias {
-    margin: auto;
-    width: 80%;
-    margin-top: 5px;
+  margin: auto;
+  width: 80%;
+  margin-top: 5px;
 
-    overflow-y: scroll;
+  overflow-y: scroll;
 }
 
-#tabela-categorias::-webkit-scrollbar, #livros-favoritos::-webkit-scrollbar, #tabela-livros::-webkit-scrollbar {
-    display: none;
+#tabela-categorias::-webkit-scrollbar,
+#livros-favoritos::-webkit-scrollbar,
+#tabela-livros::-webkit-scrollbar {
+  display: none;
 }
 
-.linhas-categoria{
-    background-color: var(--cor-tercearia);
-    border: 3px solid black;
-    border-radius: 40px;
+.linhas-categoria {
+  background-color: var(--cor-tercearia);
+  border: 3px solid black;
+  border-radius: 40px;
 
-    display: flex;
-    align-items: center;
-    margin: 10px;
-    padding: 0px 30px;
+  display: flex;
+  align-items: center;
+  margin: 10px;
+  padding: 0px 30px;
 }
 
 .linhas-categoria p {
-    font-family: "Special Elite", system-ui;
-    color: var(--cor-preto);
-    font-size: 1.5rem;
+  font-family: "Special Elite", system-ui;
+  color: var(--cor-preto);
+  font-size: 1.5rem;
 }
 
 .acoes-categoria {
-    display: flex;
-    align-items: center;
-    gap: 30px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
 }
 
-.acoes-categoria img, .btn-back img {
-    height: 30px;
+.acoes-categoria img,
+.btn-back img {
+  height: 30px;
 }
 
 .btn-edit {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .btn-delet {
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
 }
 
 .btn-back {
-    height: 30px;
-    width: 7rem;
-    border: none;
-    border-radius: 50px;
-    background-color: var(--cor-secundaria);
+  height: 30px;
+  width: 7rem;
+  border: none;
+  border-radius: 50px;
+  background-color: var(--cor-secundaria);
 }
 
 #input-add {
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
-    width: 60%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  width: 60%;
 }
 
-#input-categorias, #input-edit-categorias {
-    height: 50px;
-    margin: auto;
-    background-color: var(--cor-tercearia);
-    border: 3px solid black;
-    border-radius: 40px;
-    padding: 5px;
+#input-categorias,
+#input-edit-categorias {
+  height: 50px;
+  max-width: 25rem;
+  margin: auto;
+  background-color: var(--cor-tercearia);
+  border: 3px solid black;
+  border-radius: 40px;
+  padding: 5px;
 
-    font-family: "Special Elite", system-ui;
-    font-size: 2rem;
-    color: var(--cor-preto);
-    text-align: center;
+  font-family: "Special Elite", system-ui;
+  font-size: 2rem;
+  color: var(--cor-preto);
+  text-align: center;
 }
 
-#btn-add-categoria, #btn-edit-categoria {
-    height: 50px;
-    width: 20rem;
-    margin: auto;
-    padding: 0px;
-    border: none;
-    color: var(--cor-tercearia);
+#btn-add-categoria,
+#btn-edit-categoria {
+  height: 50px;
+  width: 20rem;
+  margin: auto;
+  padding: 0px;
+  border: none;
+  color: var(--cor-tercearia);
+  font-size: 2rem;
+  cursor: pointer;
 }
 
-#btn-add-categoria > a, #btn-edit-categoria > a {
-    font-size: 2rem;
+#modal-categorias > form {
+  margin: 0;
+  height: 100%;
 }
 
 /* Estilizando o Favoritos */
 #main-favoritos {
-    justify-content: start;
-    align-items: flex-end
+  justify-content: start;
+  align-items: flex-end;
+  padding: 0;
 }
 
 #container-favoritos {
-    display: grid;
-    width: 100%;
-    height: 42rem;
-    grid-template-columns: 4fr 8fr ;
-    gap: 20px;
-    padding-right: 20px;
+  display: grid;
+  width: 100%;
+  height: 672px;
+  grid-template-columns: 2fr 10fr;
+  gap: 20px;
+  padding-right: 20px;
 }
 
+#categorias-livros,
+#livros-favoritos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  background-color: var(--cor-secundaria);
 
-#categorias-livros, #livros-favoritos{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 20px;
-    background-color: var(--cor-secundaria);
-
-    width: 100%;
-    height: 100%;
-    padding: 25px;
-    border-radius: 0px 50px 0px 0px;
-    font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  height: 100%;
+  padding: 25px;
+  border-radius: 0px 50px 0px 0px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .livro-categoria {
-    background-color: var(--cor-tercearia);
-    font-size: 2rem;
-    padding: 5px;
-    border-radius: 10px;
+  background-color: var(--cor-tercearia);
+  font-size: 2rem;
+  padding: 5px;
+  border-radius: 10px;
 }
 
 .livro-categoria:hover {
-    background-color: var(--cor-primaria);
+  background-color: var(--cor-primaria);
 }
-
 
 #livros-favoritos {
-    border-radius: 50px 50px 0px 0px;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    overflow-y: scroll;
+  border-radius: 50px 50px 0px 0px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  overflow-y: scroll;
 }
 
-.livro-favorito, .livro {
-    height: 200px;
-    width: 120px;
-    font-size: .6rem;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-    gap: 10px;
-    position: relative;
+.livro-favorito,
+.livro {
+  height: 200px;
+  width: 120px;
+  font-size: 0.6rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  gap: 10px;
+  position: relative;
 }
 
-.livro-favorito > img, .livro > img {
-    height: 70%;
-    width: 80%;
+.livro-favorito > img,
+.livro > img {
+  height: 70%;
+  width: 80%;
 }
 
-.coracao-icon, .edit-livro-icon {
-    position: absolute;
-    width: 25px;
-    top: -1%;
-    left: 65%;
+.coracao-icon,
+.edit-livro-icon {
+  position: absolute;
+  width: 25px;
+  top: -1%;
+  left: 65%;
 }
 
 /* Estilizando os Livros */
 
 #tabela-livros {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    width: 100%;
-    margin-top: 20px;
-    overflow-y: scroll;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 20px;
+  overflow-y: scroll;
 }
 
 .edit-livro-icon {
-    background-color: var(--cor-tercearia);
+  background-color: var(--cor-tercearia);
+}
+#modal-livros > form {
+  height: 100%;
 }
 
+#input-add-livro,
+#input-edit-livro {
+  display: grid;
+  grid-template-rows: 2fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  gap: 10px;
+  padding: 20px 50px;
+  height: 90%;
+}
+
+#descricoes-livros {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#title-livro,
+#autor-livro,
+#categoria-livro,
+#sinopse-livro,
+#edit-title-livro,
+#edit-autor-livro,
+#edit-categoria-livro,
+#edit-sinopse-livro {
+  background-color: var(--cor-primaria);
+  border: none;
+  border-radius: 40px;
+  height: 40px;
+  padding: 10px;
+  display: flex;
+  text-align: center;
+  font-size: 1rem;
+  font-family: "Special Elite", system-ui;
+}
+
+#input-add-livro > input[type="file"],
+#input-edit-livro > input[type="file"] {
+  display: none;
+}
+#input-add-livro > label,
+#input-edit-livro > label {
+  background-color: var(--cor-tercearia);
+  height: 100%;
+  width: 90%;
+  padding: 10px;
+  border-radius: 40px;
+  font-family: "Special Elite", system-ui;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+}
+
+#title-livro::-webkit-input-placeholder,
+#autor-livro::-webkit-input-placeholder,
+#categoria-livro::-webkit-input-placeholder,
+#sinopse-livro::-webkit-input-placeholder,
+#edit-title-livro::-webkit-input-placeholder,
+#edit-autor-livro::-webkit-input-placeholder,
+#edit-categoria-livro::-webkit-input-placeholder,
+#edit-sinopse-livro::-webkit-input-placeholder {
+  color: var(--cor-preto);
+}
+
+.input-descricaoLivro {
+  width: 100%;
+}
+
+#sinopse-livro,
+#edit-sinopse-livro {
+  grid-column: span 2;
+  width: 100%;
+  height: 100%;
+}
+
+#form-addLivros > button,
+#form-editLivros > button {
+  margin: 0;
+  cursor: pointer;
+  font-size: 1rem;
+  width: 40%;
+}
+
+#form-addLivros > button:hover,
+#form-editLivros > button:hover {
+  background-color: var(--cor-secundaria);
+}
 /* Estilizando o Contato */
 
 #contatos {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
 }
 
 .icon-contato {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 
-    font-family: "Special Elite", system-ui;
-    font-size: 3rem;
+  font-family: "Special Elite", system-ui;
+  font-size: 3rem;
 }
 
 .div-contato {
-    background-color: var(--cor-primaria);
-    border-radius: 50%;
-    height: 130px;
-    width: 130px;
-    padding: 20px;
+  background-color: var(--cor-primaria);
+  border-radius: 50%;
+  height: 130px;
+  width: 130px;
+  padding: 20px;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.icon-contato  img {
-    height: 80px;
+.icon-contato img {
+  height: 80px;
 }
 
 /* Estilização do Quem Somos */
 #quem_somos {
-    font-family: "Special Elite", system-ui;
-    color: var(--cor-preto);
-    text-align: center;
+  font-family: "Special Elite", system-ui;
+  color: var(--cor-preto);
+  text-align: center;
 
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
-#quem_somos > h1, p {
-    margin: 24px auto;
+#quem_somos > h1,
+p {
+  margin: 24px auto;
 }
 
 #quem_somos > h1 {
-    background-color: var(--cor-primaria);
-    width: 300px;
-    padding: 4.8px;
-    border-radius: 10PX;
+  background-color: var(--cor-primaria);
+  width: 300px;
+  padding: 4.8px;
+  border-radius: 10px;
 }
 
 #quem_somos > p {
-    padding: 0 80px;
-    font-size: 40px;
+  padding: 0 80px;
+  font-size: 40px;
 }
