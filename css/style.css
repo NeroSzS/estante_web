@@ -47,6 +47,15 @@ header {
   color: var(--preto);
 }
 
+/* Menu Mobile */
+#btn-menu {
+  display: none;
+}
+
+.aparecer {
+  display: flex !important;
+}
+
 #busca {
   width: 18.75rem;
   height: 2.5rem;
@@ -143,7 +152,8 @@ footer {
 }
 
 #img-social {
-  text-align: end;
+  display: flex;
+  justify-content: flex-end;
 }
 
 #img-social img {
@@ -181,6 +191,12 @@ footer {
 
 #modal-login {
   height: 25rem;
+}
+
+#div-login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #modal-cadastro {
@@ -544,7 +560,6 @@ a {
   top: -1%;
   left: 65%;
 }
-
 /* Estilizando os Livros */
 
 #tabela-livros {
@@ -717,4 +732,86 @@ p {
 #quem_somos > p {
   padding: 0 80px;
   font-size: 40px;
+}
+
+/* Media Queries para Dispositivos Móveis */
+@media only screen and (max-width: 768px) {
+  #logo {
+    font-size: 2rem;
+  }
+
+  #busca {
+    width: 300px;
+  }
+
+  #logo-busca {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #btn-menu {
+    display: block;
+    height: 40px;
+  }
+
+  #logo-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+  }
+
+  nav > a {
+    font-size: 1.5rem;
+    padding: 6px;
+  }
+
+  #menu-nav {
+    display: none;
+  }
+
+  main {
+    padding: 0.75rem;
+  }
+
+  #quem_somos > p {
+    padding: 0 20px;
+    font-size: 2rem;
+  }
+
+  .icon-contato {
+    font-size: 1.5rem;
+  }
+
+  .div-contato {
+    background-color: var(--cor-primaria);
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+  }
+
+  .icon-contato img {
+    height: 50px;
+  }
+
+  #modal-login,
+  #modal-cadastro,
+  #modal-perfil,
+  #modal-categorias,
+  #modal-livros {
+    width: 90%;
+    padding: 30px;
+  }
+
+  #livros-favoritos {
+    padding: 5px;
+  }
 }

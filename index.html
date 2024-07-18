@@ -1,41 +1,61 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Estante Web</title>
-    <link rel="stylesheet" href="./css/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./script/scripit.js" defer></script>
+  </head>
+  <body>
     <header id="cabecalho">
-        <div id="logo-busca">
-            <h1 id="logo">Estante Web</h1>
-            <form action="" id="form-busca">
-                <img src="./imgs/search_icon.svg" alt="" id="icon-busca">
-                <input type="search" name="busca" id="busca">
-                <button id="icon-mic"><img src="./imgs/mic_icon.svg" alt="" ></button>
-            </form>
+      <div id="logo-busca">
+        <div id="logo-menu">
+          <h1 id="logo">Estante Web</h1>
+          <img
+            src="imgs/menu-icon.svg"
+            alt=""
+            id="btn-menu"
+            height="50px"
+            width="50px"
+          />
         </div>
-        <nav id="menu-nav">
-            <a href="index.html">Início</a>
-            <a href="views/quem_somos.html">Quem Somos</a>
-            <a href="views/contatos.html">Contato</a>
-            <a href="views/favoritos.html" class="alinhar"><img src="./imgs/star_icon.svg" alt="">Favoritos</a>
-            <a href="views/login.html">Login</a>
-            <a href="views/perfil.html">Perfil</a>
-        </nav>
+
+        <form action="" id="form-busca">
+          <img src="./imgs/search_icon.svg" alt="" id="icon-busca" />
+          <input type="search" name="busca" id="busca" />
+          <button id="icon-mic">
+            <img src="./imgs/mic_icon.svg" alt="" />
+          </button>
+        </form>
+      </div>
+      <nav id="menu-nav">
+        <a href="index.html">Início</a>
+        <a href="views/quem_somos.html">Quem Somos</a>
+        <a href="views/contatos.html">Contato</a>
+        <a href="views/favoritos.html" class="alinhar"
+          ><img src="./imgs/star_icon.svg" alt="" />Favoritos</a
+        >
+        <a href="views/login.html">Login</a>
+        <a href="views/perfil.html">Perfil</a>
+      </nav>
     </header>
 
     <main id="conteudo-principal"></main>
 
     <footer id="rodape">
-        <div id="copy"><p>&copy; Estante Web</p></div>
-        <div><p>Todos os direitos reservados</p></div>
-        <div id="img-social">
-            <img src="./imgs/facebook_icon.svg" alt="" width="30px" height="30px">
+      <div id="copy"><p>&copy; Estante Web</p></div>
+      <div><p>Todos os direitos reservados</p></div>
+      <div id="img-social">
+        <img src="./imgs/facebook_icon.svg" alt="" width="30px" height="30px" />
 
-            <img src="./imgs/instagram_icon.svg" alt="" width="30px" height="30px">
-        </div>
+        <img
+          src="./imgs/instagram_icon.svg"
+          alt=""
+          width="30px"
+          height="30px"
+        />
+      </div>
     </footer>
-</body>
+  </body>
 </html>
